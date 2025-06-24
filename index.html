@@ -4,9 +4,26 @@
     
       <title>Diddy Album</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
 
      </head>
+
+
       <body>
+       <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">MySite</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#playlist">Playlist</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<button id="toggle-dark" class="toggle-btn">🌙 Toggle Dark Mode</button>
+
       
         <h1 style="text-align: center";>Documentation</h1><hr>
         <h4> best anime for me👌(not a anime guy)</h4> 
@@ -14,7 +31,8 @@
         <audio controls autoplay loop>
         <source src="music/Mi Gente (PenduJatt.Com.Se).mp3">
         </audio><br>
-        <img src="images/cat.jpg" width="35%">
+        <img src="images/cat.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+
         <p>It is my first web application🥀 so thats why its chopped as fk but idc about anyone comments on this cz i am crazy... And this crazyness will take me higher and higher than Snoop Dogg. Web page is without Css thats why its too simple</p>
 
         <p><b><i>Need a ui/ux designer in my team.</i></b></p>
@@ -33,7 +51,12 @@
         
         
     
-    
+         <script>
+  const toggleBtn = document.getElementById('toggle-dark');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
       </body>
 
 </html>
