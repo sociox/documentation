@@ -91,13 +91,13 @@ body.dark-mode {
 /* Toggle button styling */
 .toggle-btn {
   position: fixed;
-  top: 100px;
+  top: 20px;
   right: 20px;
   background: #444;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
   z-index: 1000;
