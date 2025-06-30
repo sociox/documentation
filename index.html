@@ -1,53 +1,102 @@
 <!DOCTYPE html>
-<html>
-     <head>
-    
-      <title>Diddy Album</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diddy Album 🔥</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
 
-     </head>
+      .float {
+        animation: float 4s ease-in-out infinite;
+      }
 
+      .dark-mode {
+        background-color: #0f172a;
+        color: white;
+      }
 
+      .glass {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
 
-<button id="toggle-dark" class="toggle-btn">🌙 Toggle Dark Mode</button>
+  <body class="bg-gradient-to-r from-gray-800 via-black to-gray-900 min-h-screen text-white p-6 font-sans">
 
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 animate-pulse">
+        🚀 Diddy Album Page
+      </h1>
       
-        <h1 style="text-align: center";>Documentation</h1><hr>
-        <h4> best anime for me👌(not a anime guy)</h4> 
-        <a href="https://youtu.be/yGrR3ChBz_c?si=DX5QK7P4UvqH8nSh" target="_blank">  Hajimo no ippo</a><br><br>
-        <audio controls autoplay loop>
+    </div>
+
+    <div class="glass p-6 rounded-2xl shadow-lg float mb-8">
+      <h2 class="text-center text-2xl font-bold mb-2">📚 Documentation</h2>
+      <h4 class="text-center text-sm italic mb-4">Best anime for me 👌 (not an anime guy)</h4>
+      <div class="text-center mb-4">
+        <a href="https://youtu.be/yGrR3ChBz_c?si=DX5QK7P4UvqH8nSh" target="_blank" class="text-cyan-400 underline hover:text-cyan-200 transition-all">Hajime no Ippo</a>
+      </div>
+
+      <audio controls autoplay loop class="w-full mb-4">
         <source src="music/Mi Gente (PenduJatt.Com.Se).mp3">
-        </audio><br>
-        <img src="images/cat.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+      </audio>
 
-        <p>It is my first web application🥀 so thats why its chopped as fk but idc about anyone comments on this cz i am crazy... And this crazyness will take me higher and higher than Snoop Dogg. Web page is without Css thats why its too simple</p>
+      <img src="images/cat.jpg" class="rounded-xl shadow-md max-w-sm mx-auto mb-4 float" />
 
-        <p><b><i>Need a ui/ux designer in my team.</i></b></p>
+      <p class="text-sm text-gray-300 mb-2 text-center">
+        It is my first web application 🥀 — it's chopped as fk but idc. This craziness will take me higher than Snoop Dogg 🌫️
+      </p>
 
-        <h3>My spotify playlist</h3>
+      <p class="text-center text-pink-400 font-semibold italic mb-4">
+        Need a UI/UX designer in my team
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <!-- Spotify Card -->
+      <div class="glass p-6 rounded-xl shadow-xl float transition-all hover:scale-105">
+        <h3 class="text-xl font-bold mb-2 text-green-300">🎵 My Spotify Playlist</h3>
         <a href="https://open.spotify.com/playlist/4aoZcQ5Q0SRBrBT0hXBkIW?si=1eqdLQERQF-nHpFIGgYc7Q" target="_blank">
-        <button style="font-size: 15px; background-color: green; color:white;"><b>Spotify</b></button>
+          <button class="bg-green-500 px-4 py-2 rounded text-white font-bold hover:bg-green-400 transition-all">Spotify</button>
         </a>
-        <p>I will prefer you to start listening from the recently added order</p>
-       
-        <h3>Instagram</h3>
+        <p class="text-sm text-gray-300 mt-2">Start from the recently added tracks for max vibe 🚀</p>
+      </div>
+
+      <!-- Instagram Card -->
+      <div class="glass p-6 rounded-xl shadow-xl float transition-all hover:scale-105">
+        <h3 class="text-xl font-bold mb-2 text-pink-300">📸 Instagram</h3>
         <a href="https://www.instagram.com/ayuxhraghav/" target="_blank">
-        <button style="font-size: 15px; background-color: palevioletred; color: white;"><b>Instagram</b></button>
+          <button class="bg-pink-500 px-4 py-2 rounded text-white font-bold hover:bg-pink-400 transition-all">Instagram</button>
         </a>
-        <p>Work with me? Hit me a Dm(note: I am not a web developer) </p>
-        
-        <img src="images/3.png" style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
-        <h3>nah, this shit gonna push me harder day by day</h3>
-        <h3>Eye of a Tiger</h3>
+        <p class="text-sm text-gray-300 mt-2">Work with me? Hit me a DM. (Note: I’m not a web dev — I’m a future force)</p>
+      </div>
+    </div>
 
-    
-         <script>
-  const toggleBtn = document.getElementById('toggle-dark');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
-      </body>
+    <img src="images/3.png" class="rounded-2xl shadow-lg max-w-xl mx-auto mb-6 float" />
 
+    <div class="text-center space-y-2">
+      <h3 class="text-xl text-yellow-400 font-bold">nah, this shit gonna push me harder day by day 💪</h3>
+      <h3 class="text-xl text-blue-300 font-semibold">Eye of a Tiger 🐅</h3>
+    </div>
+
+    <script>
+      const toggleBtn = document.getElementById('toggle-dark');
+      toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
+
+  </body>
 </html>
