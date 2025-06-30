@@ -33,16 +33,15 @@
     </style>
   </head>
 
-  <body class="bg-gradient-to-r from-gray-800 via-black to-gray-900 min-h-screen text-white p-6 font-sans">
+  <body class="bg-gradient-to-r from-gray-800 via-black to-gray-900 min-h-screen text-white px-4 py-6 font-sans">
 
-    <div class="flex justify-between items-center mb-8">
-      <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 animate-pulse">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 animate-pulse text-center">
         🚀 Diddy Album Page
       </h1>
-      
     </div>
 
-    <div class="glass p-6 rounded-2xl shadow-lg float mb-8">
+    <div class="glass p-4 md:p-6 rounded-2xl shadow-lg float mb-8">
       <h2 class="text-center text-2xl font-bold mb-2">📚 Documentation</h2>
       <h4 class="text-center text-sm italic mb-4">Best anime for me 👌 (not an anime guy)</h4>
       <div class="text-center mb-4">
@@ -53,7 +52,7 @@
         <source src="music/Mi Gente (PenduJatt.Com.Se).mp3">
       </audio>
 
-      <img src="images/cat.jpg" class="rounded-xl shadow-md max-w-sm mx-auto mb-4 float" />
+      <img src="images/cat.jpg" class="rounded-xl shadow-md w-full max-w-xs mx-auto mb-4 float" />
 
       <p class="text-sm text-gray-300 mb-2 text-center">
         It is my first web application 🥀 — it's chopped as fk but idc. This craziness will take me higher than Snoop Dogg 🌫️
@@ -64,39 +63,42 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
       <!-- Spotify Card -->
-      <div class="glass p-6 rounded-xl shadow-xl float transition-all hover:scale-105">
+      <div class="glass p-4 md:p-6 rounded-xl shadow-xl float transition-all hover:scale-105">
         <h3 class="text-xl font-bold mb-2 text-green-300">🎵 My Spotify Playlist</h3>
         <a href="https://open.spotify.com/playlist/4aoZcQ5Q0SRBrBT0hXBkIW?si=1eqdLQERQF-nHpFIGgYc7Q" target="_blank">
-          <button class="bg-green-500 px-4 py-2 rounded text-white font-bold hover:bg-green-400 transition-all">Spotify</button>
+          <button class="bg-green-500 px-4 py-2 rounded text-white font-bold hover:bg-green-400 transition-all w-full">Spotify</button>
         </a>
         <p class="text-sm text-gray-300 mt-2">Start from the recently added tracks for max vibe 🚀</p>
       </div>
 
       <!-- Instagram Card -->
-      <div class="glass p-6 rounded-xl shadow-xl float transition-all hover:scale-105">
+      <div class="glass p-4 md:p-6 rounded-xl shadow-xl float transition-all hover:scale-105">
         <h3 class="text-xl font-bold mb-2 text-pink-300">📸 Instagram</h3>
         <a href="https://www.instagram.com/ayuxhraghav/" target="_blank">
-          <button class="bg-pink-500 px-4 py-2 rounded text-white font-bold hover:bg-pink-400 transition-all">Instagram</button>
+          <button class="bg-pink-500 px-4 py-2 rounded text-white font-bold hover:bg-pink-400 transition-all w-full">Instagram</button>
         </a>
         <p class="text-sm text-gray-300 mt-2">Work with me? Hit me a DM. (Note: I need a good team for project 2026)</p>
       </div>
     </div>
 
-    <img src="images/3.png" class="rounded-2xl shadow-lg max-w-xl mx-auto mb-6 float" />
+    <img src="images/3.png" class="rounded-2xl shadow-lg w-full max-w-md mx-auto mb-6 float" />
 
     <div class="text-center space-y-2">
-      <h3 class="text-xl text-yellow-400 font-bold">nah, this shit gonna push me harder day by day 💪</h3>
-      <h3 class="text-xl text-blue-300 font-semibold">Eye of a Tiger 🐅</h3>
+      <h3 class="text-lg md:text-xl text-yellow-400 font-bold">nah, this shit gonna push me harder day by day 💪</h3>
+      <h3 class="text-lg md:text-xl text-blue-300 font-semibold">Eye of a Tiger 🐅</h3>
     </div>
 
     <script>
       const toggleBtn = document.getElementById('toggle-dark');
-      toggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-      });
+      if(toggleBtn){
+        toggleBtn.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+        });
+      }
     </script>
 
   </body>
 </html>
+
